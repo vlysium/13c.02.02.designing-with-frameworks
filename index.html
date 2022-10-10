@@ -10,12 +10,21 @@
     <!-- Lorem Ipsum from https://loremizr.monkeymatt.com/ -->
     <link rel="stylesheet" href="style.css" />
     <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {},
+          },
+        },
+      };
+    </script>
   </head>
   <body>
-    <nav>
+    <nav class="flex justify-between gap-x-8 p-4 sticky top-0 bg-slate-100">
       <!-- Menu component layout -->
       <a href="index.html">Logo</a>
-      <ul>
+      <ul class="flex justify-between gap-x-8 ml-auto">
         <li><a href="#advantages">Advantages</a></li>
         <li><a href="#product">Product</a></li>
         <li><a href="#team">Team</a></li>
