@@ -1,1 +1,21 @@
-/* Tip, copy paste from 13c.01.01 & 13c.01.02 to get fonts and colors up and running ... */
+body {
+  overflow-x: hidden;
+}
+
+/* #region images */
+
+header {
+  background-image: url("images/header-image.webp");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.header_graphics {
+  background-image: url("images/header-graphics.webp");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* #endregion images */

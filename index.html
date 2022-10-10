@@ -21,29 +21,29 @@
     </script>
   </head>
   <body>
-    <nav class="flex justify-between gap-x-8 p-4 sticky top-0 bg-slate-100 items-center">
+    <nav class="flex justify-between gap-x-8 p-4 sticky top-0 bg-cyan-700 items-center overflow-x-auto">
       <!-- Menu component layout -->
-      <a href="index.html">Logo</a>
+      <a href="index.html" class="text-slate-50 text-xl font-semibold">Logo</a>
       <ul class="flex justify-between gap-x-8 ml-auto">
-        <li><a href="#advantages">Advantages</a></li>
-        <li><a href="#product">Product</a></li>
-        <li><a href="#team">Team</a></li>
+        <li><a href="#advantages" class="text-slate-50">Advantages</a></li>
+        <li><a href="#product" class="text-slate-50">Product</a></li>
+        <li><a href="#team" class="text-slate-50">Team</a></li>
       </ul>
-      <button type="button" class="bg-purple-400 px-4 py-2 rounded-full">Learn More &#x2794;</button>
+      <button type="button" class="bg-orange-300 px-4 py-2 rounded-full whitespace-nowrap">Learn More &#x2794;</button>
     </nav>
-    <header>
+    <header class="h-screen grid md:grid-cols-2 sm:grid-cols-1 sm:grid-rows-none sm:grid-cols-1 p-4">
       <!-- Header section -->
       <!-- Add image-->
-      <div class="header_text">
-        <h1>Corrupti e lorem ut fecerunt contrarii.</h1>
-        <p>
+      <div class="header_text my-auto grid gap-y-4">
+        <h1 class="text-5xl">Corrupti e lorem ut fecerunt contrarii.</h1>
+        <p class="text-lg">
           Non utriuque solatium amet netus nobis cum metus securus fecerunt oppressus eu oportunitatis error est quae
           interpretes corporis - v tot ullo s Verius.
         </p>
-        <button type="button">Request Demo &#x2794;</button>
+        <button type="button" class="bg-orange-300 px-4 py-2 rounded-full max-w-max">Request Demo &#x2794;</button>
       </div>
       <!-- Add image-->
-      <div class="header_graphics"></div>
+      <div class="header_graphics w-2/3 m-auto aspect-square"></div>
     </header>
     <section id="advantages">
       <h2>Advantages</h2>
