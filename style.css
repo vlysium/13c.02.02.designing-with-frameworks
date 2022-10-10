@@ -18,4 +18,11 @@ header {
   background-size: cover;
 }
 
+.advantages_card_graphics {
+  background-image: url("images/advantages-card-graphics.webp");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 /* #endregion images */
