@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="scroll-smooth">
+<html lang="en" class="scroll-smooth bg-slate-50">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -13,6 +13,25 @@
     <script>
       tailwind.config = {
         theme: {
+          screens: {
+            xs: "475px",
+            // => @media (min-width: 475px) { ... }
+
+            sm: "640px",
+            // => @media (min-width: 640px) { ... }
+
+            md: "768px",
+            // => @media (min-width: 768px) { ... }
+
+            lg: "1024px",
+            // => @media (min-width: 1024px) { ... }
+
+            xl: "1280px",
+            // => @media (min-width: 1280px) { ... }
+
+            "2xl": "1536px",
+            // => @media (min-width: 1536px) { ... }
+          },
           extend: {
             colors: {},
           },
@@ -21,15 +40,20 @@
     </script>
   </head>
   <body>
-    <nav class="flex justify-between gap-x-8 p-4 sticky top-0 bg-cyan-700 items-center overflow-x-auto">
+    <nav
+      class="flex justify-between gap-x-8 p-4 sticky top-0 bg-cyan-700 items-center overflow-x-auto border-b border-cyan-900"
+    >
       <!-- Menu component layout -->
-      <a href="index.html" class="text-slate-50 text-xl font-semibold">Logo</a>
+      <a href="index.html" class="text-stone-100 text-xl font-semibold">Logo</a>
       <ul class="flex justify-between gap-x-8 ml-auto">
-        <li><a href="#advantages" class="text-slate-50">Advantages</a></li>
-        <li><a href="#product" class="text-slate-50">Product</a></li>
-        <li><a href="#team" class="text-slate-50">Team</a></li>
+        <li><a href="#advantages" class="text-stone-100">Advantages</a></li>
+        <li><a href="#product" class="text-stone-100">Product</a></li>
+        <li><a href="#team" class="text-stone-100">Team</a></li>
       </ul>
-      <button type="button" class="bg-orange-300 px-4 py-2 rounded-full whitespace-nowrap text-slate-900">
+      <button
+        type="button"
+        class="bg-orange-300 px-4 py-2 rounded-full whitespace-nowrap text-slate-900 transition-colors hover:bg-orange-400"
+      >
         Learn More &#x2794;
       </button>
     </nav>
@@ -43,7 +67,10 @@
             Non utriuque solatium amet netus nobis cum metus securus fecerunt oppressus eu oportunitatis error est quae
             interpretes corporis - v tot ullo s Verius.
           </p>
-          <button type="button" class="bg-orange-300 px-4 py-2 rounded-full max-w-max text-slate-900">
+          <button
+            type="button"
+            class="bg-orange-300 px-4 py-2 rounded-full max-w-max text-slate-900 transition-colors hover:bg-orange-400"
+          >
             Request Demo &#x2794;
           </button>
         </div>
@@ -144,24 +171,31 @@
         </div>
       </div>
     </section>
-    <section class="highlight">
-      <!-- Big headline component -->
-      <h2>
-        Intentione fuga natus quasi et Modulumina Simulacrum memento usus instrumenta apparet nam y figuraliler custodes
-        in est malleum fuga.
-      </h2>
-      <!-- Two small cards -->
-      <div class="highlight_small_cards">
-        <div>
-          <h3>Landem Inncem</h3>
-          <p>46% scripta orci</p>
+    <section class="highlight py-16 bg-cyan-700 px-4">
+      <div class="max-w-screen-xl mx-auto">
+        <!-- Big headline component -->
+        <h2 class="text-2xl sm:text-4xl md:text-6xl lg:text-8xl font-semibold text-stone-100 pb-8">
+          Intentione fuga natus quasi et Modulumina Simulacrum memento usus instrumenta apparet nam y figuraliler
+          custodes in est malleum fuga.
+        </h2>
+        <!-- Two small cards -->
+        <div class="highlight_small_cards flex justify-between flex-wrap gap-y-4 mb-8">
+          <div class="p-4 bg-stone-100 rounded-lg w-full xs:w-fit">
+            <h3 class="text-2xl font-semibold text-slate-900">Landem Inncem</h3>
+            <p class="text-slate-900">46% scripta orci</p>
+          </div>
+          <div class="p-4 bg-stone-100 rounded-lg w-full xs:w-fit">
+            <h3 class="text-2xl font-semibold text-slate-900">Zzril Magnis</h3>
+            <p class="text-slate-900">45% dextris iure</p>
+          </div>
         </div>
-        <div>
-          <h3>Zzril Magnis</h3>
-          <p>45% dextris iure</p>
-        </div>
+        <button
+          type="button"
+          class="bg-orange-300 px-4 py-2 rounded-full whitespace-nowrap text-slate-900 transition-colors hover:bg-orange-400"
+        >
+          Request Demo &#x2794;
+        </button>
       </div>
-      <button type="button">Request Demo &#x2794;</button>
     </section>
     <section id="team">
       <h2>Meet the Team</h2>
