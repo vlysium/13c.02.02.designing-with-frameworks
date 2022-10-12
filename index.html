@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Responsive Design</title>
+    <title>Designing with Frameworks</title>
     <!--Template adapted from https://www.freecodecamp.org/news/basic-html5-template-boilerplate-code-example/ -->
     <!-- Inspired by https://textluke.com/ & https://carrot.tech/ for educational purpose-->
     <!-- Lorem Ipsum from https://loremizr.monkeymatt.com/ -->
@@ -32,6 +32,9 @@
             "2xl": "1536px",
             // => @media (min-width: 1536px) { ... }
           },
+          listStyleType: {
+            dash: '"- "',
+          },
           extend: {
             colors: {},
           },
@@ -44,11 +47,11 @@
       class="flex justify-between gap-x-8 p-4 sticky top-0 bg-cyan-700 items-center overflow-x-auto border-b border-cyan-900"
     >
       <!-- Menu component layout -->
-      <a href="index.html" class="text-stone-100 text-xl font-semibold">Logo</a>
+      <a href="index.html" class="text-stone-100 text-xl font-semibold hover:underline">Logo</a>
       <ul class="flex justify-between gap-x-8 ml-auto">
-        <li><a href="#advantages" class="text-stone-100">Advantages</a></li>
-        <li><a href="#product" class="text-stone-100">Product</a></li>
-        <li><a href="#team" class="text-stone-100">Team</a></li>
+        <li><a href="#advantages" class="text-stone-100 hover:underline">Advantages</a></li>
+        <li><a href="#product" class="text-stone-100 hover:underline">Product</a></li>
+        <li><a href="#team" class="text-stone-100 hover:underline">Team</a></li>
       </ul>
       <button
         type="button"
@@ -171,8 +174,8 @@
         </div>
       </div>
     </section>
-    <section class="highlight py-16 bg-cyan-700 px-4">
-      <div class="max-w-screen-xl mx-auto">
+    <section class="highlight py-16 bg-cyan-700">
+      <div class="max-w-screen-xl mx-auto px-4">
         <!-- Big headline component -->
         <h2 class="text-2xl sm:text-4xl md:text-6xl lg:text-8xl font-semibold text-stone-100 pb-8">
           Intentione fuga natus quasi et Modulumina Simulacrum memento usus instrumenta apparet nam y figuraliler
@@ -197,36 +200,36 @@
         </button>
       </div>
     </section>
-    <section id="team">
-      <h2>Meet the Team</h2>
+    <section id="team" class="py-16 px-4 max-w-screen-xl mx-auto">
+      <h2 class="text-4xl font-semibold text-slate-900">Meet the Team</h2>
       <!-- Components with graphics to one side and text to the other -->
-      <article>
+      <article class="grid grid-cols-2 gap-5 mt-6">
         <!-- Add image-->
-        <section class="team_graphics"></section>
+        <section class="team_graphics h-72"></section>
         <section class="team_text">
-          <h3>Cras</h3>
-          <ul>
-            <li>- Oti usus symbola temporibus</li>
-            <li>- Clectione 24/7</li>
-            <li>- Risus terrestres</li>
-            <li>- Neque quae peccat</li>
+          <h3 class="text-2xl font-semibold text-slate-900">Cras</h3>
+          <ul class="pl-3">
+            <li class="list-dash list-outside text-slate-900 pb-2">Oti usus symbola temporibus</li>
+            <li class="list-dash list-outside text-slate-900 pb-2">Clectione 24/7</li>
+            <li class="list-dash list-outside text-slate-900 pb-2">Risus terrestres</li>
+            <li class="list-dash list-outside text-slate-900 pb-2">Neque quae peccat</li>
           </ul>
-          <a href="#contact">Contact Cras &#x2794;</a>
+          <a href="#contact" class="hover:underline text-orange-500">Contact Cras &#x2794;</a>
         </section>
       </article>
-      <article>
+      <article class="grid grid-cols-2 gap-5 mt-6">
         <!-- Change order here so text comes first then graphics -->
         <!-- Add image-->
-        <section class="team_graphics"></section>
-        <section class="team_text">
-          <h3>Ipsum Sapien</h3>
-          <ul>
-            <li>- Dp primis te quod pede</li>
-            <li>- Eos eius regulantur wisi eum</li>
-            <li>- Eget clari criminales</li>
-            <li>- Odio timorem nascetur</li>
+        <section class="team_graphics order-2 h-72"></section>
+        <section class="team_text order-1">
+          <h3 class="text-2xl font-semibold text-slate-900">Ipsum Sapien</h3>
+          <ul class="pl-3">
+            <li class="list-dash list-outside text-slate-900 pb-2">Dp primis te quod pede</li>
+            <li class="list-dash list-outside text-slate-900 pb-2">Eos eius regulantur wisi eum</li>
+            <li class="list-dash list-outside text-slate-900 pb-2">Eget clari criminales</li>
+            <li class="list-dash list-outside text-slate-900 pb-2">Odio timorem nascetur</li>
           </ul>
-          <a href="#contact">Contact Ipsum Sapien &#x2794;</a>
+          <a href="#contact" class="hover:underline text-orange-500">Contact Ipsum Sapien &#x2794;</a>
         </section>
       </article>
     </section>

@@ -27,7 +27,14 @@ header {
 
 .product_graphics {
   background-image: url("images/product-graphics.webp");
-  background-position: center 30%;
+  background-position: center 25%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.team_graphics {
+  background-image: url("images/team-graphics.webp");
+  background-position: 90% center;
   background-repeat: no-repeat;
   background-size: cover;
 }
