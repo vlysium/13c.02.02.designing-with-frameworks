@@ -25,4 +25,11 @@ header {
   background-size: cover;
 }
 
+.product_graphics {
+  background-image: url("images/product-graphics.webp");
+  background-position: center 30%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 /* #endregion images */
